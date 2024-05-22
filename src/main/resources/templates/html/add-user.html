@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is homepage</title>
+    </head>
+    <body>
+        <h1>Hello, world!</h1>	
+        <form action="#" th:action="@{/adduser}" th:object="${user}" method="post">
+    <label for="name">Name</label>
+    <input type="text" th:field="*{name}" id="name" placeholder="Name">
+    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+    <br>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" th:field="*{password}" id="password" placeholder="password">
+    <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span>
+    <br>
+    <br>
+    <label for="email">Email</label>
+    <input type="text" th:field="*{email}" id="email" placeholder="Email">
+    <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+    <br>
+    <br>
+    <label for="choose">Choose a Role:</label>
+
+	<select name="Role" id="role">
+  <option value="Admin">Admin</option>
+    <option value="user">user</option>
+  
+  <option value="Data research executive">Sale-executive</option>
+  <option value="Data research executive">Data research executive</option>
+ 
+</select>
+<br>
+<br>
+<label for="phone">Enter your phone number:</label>
+<input type="tel" id="mobNo" name="phone"  size="20" minlength="9" maxlength="10" required>
+     <span class="validity"></span>
+    <br>
+<br>
+ <input type="submit" value="Add User">
+</form>
+
+  
+    </body>
+</html>

@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bg-blueberry {
+    background-color: #4B0082; /* Blueberry color */
+    color: white; /* White text */
+}
+
+.bg-walnut-yellow {
+    background-color: #FFD700; /* Walnut yellow color */
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    background-color: #f8f9fa;
+    color: #4B0082 !important;
+}
+
+.sidebar .nav-link.active {
+    background-color: #FFD700; /* Walnut yellow */
+    color: #4B0082; /* Blueberry text */
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.bg-main {
+    background-color: #fff; /* White background for main content */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+}
